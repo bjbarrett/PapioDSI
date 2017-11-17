@@ -62,7 +62,7 @@ d.pred <- list(
 
 
 link2 <- link(mmale , n=1000 , data=d.pred, replace=
-	list(ap_foc=a_foc_z , ap_prt=a_prt_z , ap_dyad=a_dyad_z,am_foc=a_foc_z , am_prt=a_prt_z , am_dyad=a_dyad_z), WAIC=TRUE)
+	list(ap_actor=a_foc_z , ap_dyad=a_dyad_z,am_actor=a_foc_z , am_dyad=a_dyad_z), WAIC=TRUE)
 pred <- (1-link2$p)*link2$mu
 median(pred[,1])
 HPDI(pred[,1])
@@ -120,7 +120,7 @@ d.pred <- list(
 
 
 link2 <- link(m3 , n=1000 , data=d.pred, replace=
- list(ap_foc=a_foc_z , ap_prt=a_prt_z , ap_dyad=a_dyad_z,am_foc=a_foc_z , am_prt=a_prt_z , am_dyad=a_dyad_z), WAIC=TRUE)
+	list(ap_actor=a_foc_z , ap_dyad=a_dyad_z,am_actor=a_foc_z , am_dyad=a_dyad_z), WAIC=TRUE)
 pred <- (1-link2$p)*link2$mu
 
 dens(pred, xlim=c(0,14) , show.HPDI=0.89 , main="same topmale" , xlab="dyadic sociality index")
@@ -256,42 +256,42 @@ d.pred.dist <- list(
 
 
 link2nk <- link(mkinXmale , n=1000 , data=d.pred.nk, replace=
-	list(ap_foc=a_foc_z , ap_prt=a_prt_z , ap_dyad=a_dyad_z,am_foc=a_foc_z , am_prt=a_prt_z , am_dyad=a_dyad_z), WAIC=TRUE)
+	list(ap_actor=a_foc_z , ap_dyad=a_dyad_z,am_actor=a_foc_z , am_dyad=a_dyad_z), WAIC=TRUE)
 pred.nk <- (1-link2nk$p)*link2nk$mu
 median(pred.nk[,1])
 HPDI(pred.nk[,1])
 median(pred.nk[,2])
 HPDI(pred.nk[,2])
 link2mom <- link(mkinXmale , n=1000 , data=d.pred.mom, replace=
-	list(ap_foc=a_foc_z , ap_prt=a_prt_z , ap_dyad=a_dyad_z,am_foc=a_foc_z , am_prt=a_prt_z , am_dyad=a_dyad_z), WAIC=TRUE)
+	list(ap_actor=a_foc_z , ap_dyad=a_dyad_z,am_actor=a_foc_z , am_dyad=a_dyad_z), WAIC=TRUE)
 pred.mom <- (1-link2mom$p)*link2mom$mu
 median(pred.mom[,1])
 HPDI(pred.mom[,1])
 median(pred.mom[,2])
 HPDI(pred.mom[,2])
 link2sibs <- link(mkinXmale , n=1000 , data=d.pred.sibs, replace=
-	list(ap_foc=a_foc_z , ap_prt=a_prt_z , ap_dyad=a_dyad_z,am_foc=a_foc_z , am_prt=a_prt_z , am_dyad=a_dyad_z), WAIC=TRUE)
+	list(ap_actor=a_foc_z , ap_dyad=a_dyad_z,am_actor=a_foc_z , am_dyad=a_dyad_z), WAIC=TRUE)
 pred.sibs <- (1-link2sibs$p)*link2sibs$mu
 median(pred.sibs[,1])
 HPDI(pred.sibs[,1])
 median(pred.sibs[,2])
 HPDI(pred.sibs[,2])
 link2gma <- link(mkinXmale , n=1000 , data=d.pred.gma, replace=
-	list(ap_foc=a_foc_z , ap_prt=a_prt_z , ap_dyad=a_dyad_z,am_foc=a_foc_z , am_prt=a_prt_z , am_dyad=a_dyad_z), WAIC=TRUE)
+	list(ap_actor=a_foc_z , ap_dyad=a_dyad_z,am_actor=a_foc_z , am_dyad=a_dyad_z), WAIC=TRUE)
 pred.gma <- (1-link2gma$p)*link2gma$mu
 median(pred.gma[,1])
 HPDI(pred.gma[,1])
 median(pred.gma[,2])
 HPDI(pred.gma[,2])
 link2aunt <- link(mkinXmale , n=1000 , data=d.pred.aunt, replace=
-	list(ap_foc=a_foc_z , ap_prt=a_prt_z , ap_dyad=a_dyad_z,am_foc=a_foc_z , am_prt=a_prt_z , am_dyad=a_dyad_z), WAIC=TRUE)
+	list(ap_actor=a_foc_z , ap_dyad=a_dyad_z,am_actor=a_foc_z , am_dyad=a_dyad_z), WAIC=TRUE)
 pred.aunt <- (1-link2aunt$p)*link2aunt$mu
 median(pred.aunt[,1])
 HPDI(pred.aunt[,1])
 median(pred.aunt[,2])
 HPDI(pred.aunt[,2])
 link2dist <- link(mkinXmale , n=1000 , data=d.pred.dist, replace=
-	list(ap_foc=a_foc_z , ap_prt=a_prt_z , ap_dyad=a_dyad_z,am_foc=a_foc_z , am_prt=a_prt_z , am_dyad=a_dyad_z), WAIC=TRUE)
+	list(ap_actor=a_foc_z , ap_dyad=a_dyad_z,am_actor=a_foc_z , am_dyad=a_dyad_z), WAIC=TRUE)
 pred.dist <- (1-link2dist$p)*link2dist$mu
 median(pred.dist[,1])
 HPDI(pred.dist[,1])

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this data and code please cite it as below."
+title: "Code for Silk et al- Female-male relationships influence the form of female-female relationships in olive baboons, Papio anubis"
+version: 1.0.0
+date-released: 2017-11-17
+url: "https://github.com/bjbarrett/PapioDSI"
+authors:
+- family-names: "Barrett"
+  given-names: "Brendan J"
+  orcid: "https://orcid.org/0000-0002-2725-2385"
